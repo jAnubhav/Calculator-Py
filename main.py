@@ -16,7 +16,7 @@ class Calc(Tk):
             cons.append(PackFrame(self, pad=5))
             cons[i] = PackFrame(cons[i], pad=10)
 
-        self.label = Label(cons[0], text="0", width=21, bg=Calc.colors["calc"], fg=Calc.colors["white"], font=("Bahnscrift", 16, "bold"), anchor="e")
+        self.label = Label(cons[0], text="0", width=21, bg=Calc.colors["calc"], fg=Calc.colors["white"], font=("Rockwell", 16, "bold"), anchor="e")
         self.label.pack()
 
         for i in range(3):
@@ -82,7 +82,7 @@ class GridFrame(Frame):
 
 class HoverButton(Button):
     def __init__(self, parent, master:Frame, row:int, column:int, char:str, bg:str, activebg:str, fg="black", width=4) -> None:
-        super().__init__(master=master, text=char, width=width, bg=bg, fg=fg, activebackground=activebg, font=("Bahnscrift", 14, "bold"), relief="flat", bd=0, cursor="hand2", command=lambda: parent.addinLabel(char))
+        super().__init__(master=master, text=char, width=width, bg=bg, fg=fg, activebackground=activebg, font=("Rockwell", 14, "bold"), relief="flat", bd=0, cursor="hand2", command=lambda: parent.addinLabel(char))
         self.defaultBg = self["bg"]
         self.bind("<Enter>", self.onEnter)
         self.bind("<Leave>", self.onLeave)
