@@ -1,0 +1,13 @@
+{
+    "bg": "#9e4636",
+    "calc": "#461d1d",
+    "numbers": "#dadada",
+    "numbers-dark": "#b8b8b8",
+    "operators": "#eb8c8c",
+    "operators-dark": "#c26363",
+    "clearings": "#b32323",
+    "clearings-dark": "#811c1c",
+    "equals": "#e9803a",
+    "equals-dark": "#bb6125",
+    "white": "#ffffff"
+}
